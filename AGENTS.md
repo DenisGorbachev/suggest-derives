@@ -1778,7 +1778,7 @@ cfg_if::cfg_if! {
 name = "suggest-derives"
 version = "0.1.0"
 edition = "2024"
-rust-version = "1.85.0"
+rust-version = "1.93.1"
 description = "A CLI for suggesting derives for Rust types"
 homepage = "https://github.com/DenisGorbachev/suggest-derives"
 repository = "https://github.com/DenisGorbachev/suggest-derives"
@@ -1829,8 +1829,8 @@ subtype = { git = "https://github.com/DenisGorbachev/subtype" }
 if_missing = "error"
 
 [providers]
-keychain = { type = "keychain", service = "rust-pre-public-lib-template" }
-pass = { type = "password-store", prefix = "rust-pre-public-lib-template/" }
+keychain = { type = "keychain", service = "suggest-derives" }
+pass = { type = "password-store", prefix = "suggest-derives/" }
 ```
 
 ### src/lib.rs
